@@ -1,0 +1,49 @@
+.title {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .banner {
+    background-image: url("../assets/home/background.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    max-width: none;
+    margin: auto;
+    background-size: cover;  
+    position:relative
+   }
+
+   .credits {
+    text-align: center;
+    vertical-align:-500px
+   }
+
+   .content {
+    text-align: center;
+   }
+
+   .textright {
+     text-align: right;
+   }
+   .textleft {
+     text-align: left;
+   }
+
+   .imageright {
+    float: right;
+    display: block;
+    max-width: 50;
+   }
+
+   
+   .bigtext {
+    font-size: 130%;
+   }
+
+  .title-big {
+    font-size: 200%;
+  }
+  ul {
+    list-style-position: inside;
+   }

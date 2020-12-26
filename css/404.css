@@ -1,0 +1,28 @@
+.title {
+    margin: auto;
+    text-align: center;
+  }
+
+  .banner {
+    background-image: url("https://www.ridhwaan.co.uk/assets/home/background.png");
+    background-color: #dddddd;
+    background-repeat: no-repeat;
+    max-width: none;
+    margin: auto;
+    background-size: cover;  
+    position:relative
+   }
+
+   .credits {
+    text-align: center;
+    vertical-align:-500px;
+    position: bottom;
+   }
+
+   .linktohome {
+     text-align: center;
+   }
+
+body {
+  background-color: #ebebeb;
+}

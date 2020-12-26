@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5G79QH0RQP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5G79QH0RQP');
+</script>
+<script src="../assets/scripts/essential/redirects.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <title>Ridhwaan001 - Redirect</title>
+    <meta property="og:title" content="Ridhwaan001 | Redirect System" />
+    <meta property="og:url" content="https://www.ridhwaan.co.uk" />
+    <meta property="og:description" content="A page used if I need to redirect to an external site.">
+    <link rel="shortcut icon" type="image/png" href="../assets/icon.png"/>
+  </head>
+  <body class="animate__animated animate__fadeIn">
+    <div class="banner">
+      <div class="title">
+
+          <br>
+          <br>
+          <br>
+    <br>
+    <br>
+    <br>
+    <h1><strong>Redirect Requested</strong></h1>
+    <br>
+    <h5 id="wants-to-send-you">The webpage you were on wants to send you to [webpage]</h5>
+    <br>
+    <h5>If you don't want to go there, <a id="return" href="javascript:back()">return to the previous page.</a></h5>
+    <br>
+    <br>
+    <br>
+
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Ridhwaan001's Website</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Links <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Lonely Bot
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="../lonely-bot/">Information + Features</a>
+          <a class="dropdown-item" href="../lonely-bot/commands">Command List</a>
+        </div>
+      </li>
+  </div>
+</nav>
+
+<div class=content>
+    <br>
+    <br>
+    <h5 id="continue"></h5>
+    <p>If you think you should not be sent to this webpage, and were sent by a page on this website, please <a href="mailto:info@ridhwaan.co.uk">let me know.</a></p>
+<!--REDIRECT CODE-->
+<script> 
+  var queryString = window.location.search;
+  var urlParams = new URLSearchParams(queryString);
+  var url = urlParams.get('url')
+  var previousPage = document.referrer;
+  console.log(url);
+  document.getElementById('wants-to-send-you').innerHTML = `The site you were on wants to send you to ${url}`
+  document.getElementById('continue').innerHTML = `To continue to the page, click <a href="javascript:redirect('${url}')">here.</a>`
+  function back() {
+    history.back();
+  }
+  </script>
+
+  </div>
+</div>
+  <br>
+<br>
+
+<hr>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="credits">Created by Ridhwaan001 using <a href="https://getbootstrap.com/">Bootstrap.</a></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
