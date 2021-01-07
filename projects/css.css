@@ -1,0 +1,56 @@
+.title {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .banner {
+    background-image: url("../assets/home/background.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    max-width: none;
+    margin: auto;
+    background-size: cover;  
+    position:relative
+   }
+
+   .credits {
+    text-align: center;
+    vertical-align:-500px
+   }
+
+   .content {
+    text-align: center;
+   }
+
+   .media {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   }
+
+   ul {
+    list-style-position: inside;
+   }
+
+
+   .mediabutton:hover {
+    animation: scale 0.5s
+}
+
+@keyframes scale {
+    50%{transform: scale(1.5);}
+}
+
+.todolist {
+  background-image: url("../assets/home/background.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  max-width: none;
+  margin: auto;
+  background-size: cover;  
+  position:relative;
+  padding-bottom: 5%;
+  padding-top: 5%;
+ }
