@@ -46,3 +46,9 @@ ul {
 .redtext {
 	color: red;
 }
+
+
+iframe {
+	border-width: thick;
+	border-color: #ffffff;
+}
