@@ -2,77 +2,109 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5G79QH0RQP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5G79QH0RQP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-5G79QH0RQP');
-</script>
-<script src="./assets/scripts/essential/redirects.js"></script>
+      gtag("config", "G-5G79QH0RQP");
+    </script>
+    <script src="./assets/scripts/essential/redirects.js"></script>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../css/home.css">
-    <link rel="stylesheet" href="../../../css/all.css">
-    
-    <rel="stylesheet  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../css/home.css" />
+    <link rel="stylesheet" href="../../../css/all.css" />
 
-    <title>Ridhwaan001 - Home</title>
-    <meta property="og:title" content="Ridhwaan001" />
-    <meta property="og:url" content="https://ridhwaan.co.uk/" />
-    <meta property="og:description" content="Ridhwaan001's homepage.">
-    <link rel="shortcut icon" type="image/png" href="./assets/icon.png"/>
+    <rel="stylesheet
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
   <body id="body" class="animate__animated animate__fadeIn">
     <div class="embedContainer">
-      <div class="embedVert" id="change">
-      <button class="btn btn-primary" onclick="idea()">Get Idea</button>
+      <div class="embedVert">
+        <p id="change" style="text-align: center;"></p>
+        <button class="btn btn-primary" onclick="idea()">
+          Get an idea of something to code
+        </button>
+        <button class="btn btn-primary" onclick="submit()">
+          Submit an idea
+        </button>
+      </div>
     </div>
-  </div>
-  <script>
-    function idea() {
-      const options = [
-        "A Discord Bot",
-        "A Chat App", 
-        "A website",
-        "A game",
-        "A <a href=\"https:///whattocode.com\">https:///whattocode.com</a> website (Basically this)"
-      ]
-      var num = Math.floor(Math.random() * options.length);
-      document.getElementById('change').innerHTML = options[num]
-	    console.log(options[num]);
-    }
-  </script>
-    
+    <script>
+      function idea() {
+        const options = [
+          "A Discord Bot",
+          "A Chat App",
+          "A website",
+          "A game",
+          'A <a href="https:///whattocode.com">What to Code</a> clone (Basically this)',
+          'A clone of <a href="https://not-reddit.vercel.app/">(not)reddit</a>',
+          'errr',
+        ];
+        var num = Math.floor(Math.random() * options.length);
+        document.getElementById("change").innerHTML = options[num];
+        console.log(options[num]);
+      }
+      function submit() {
+        window.open("mailto:info@ridhwaan.co.uk", "_self");
+      }
+    </script>
 
-      <script> // code for appearance
-        var cookies = document.cookie;
-        var switcher = document.getElementById("appearanceSwitcher");
-        var body = document.body;
-        console.log(cookies)
-        if (cookies.includes(`mode`)) {
-            if (cookies.includes(`mode=dark`)) {
-              body.classList.add('darkmode');
-            } else {
-              body.classList.remove('darkmode');
-            }
+    <script>
+      // code for appearance
+      var cookies = document.cookie;
+      var switcher = document.getElementById("appearanceSwitcher");
+      var body = document.body;
+      console.log(cookies);
+      if (cookies.includes(`mode`)) {
+        if (cookies.includes(`mode=dark`)) {
+          body.classList.add("darkmode");
         } else {
-        var CookieDate = new Date;
-        CookieDate.setFullYear(CookieDate.getFullYear() +10);
-        document.cookie = 'mode=light; expires=' + CookieDate.toGMTString() + ';';
-        var cookies = document.cookie;
-        console.log(cookies)
+          body.classList.remove("darkmode");
         }
-        
-        </script>    <!-- Optional JavaScript -->
+      } else {
+        var CookieDate = new Date();
+        CookieDate.setFullYear(CookieDate.getFullYear() + 10);
+        document.cookie =
+          "mode=light; expires=" + CookieDate.toGMTString() + ";";
+        var cookies = document.cookie;
+        console.log(cookies);
+      }
+    </script>
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
