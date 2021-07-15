@@ -2,161 +2,258 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5G79QH0RQP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5G79QH0RQP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-5G79QH0RQP');
-</script>
-<script src="./assets/scripts/essential/redirects.js"></script>
+      gtag("config", "G-5G79QH0RQP");
+    </script>
+    <script src="./assets/scripts/essential/redirects.js"></script>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/all.css">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-    <title>Ridhwaan001 - Home</title>
+    <title>Ridhwaan001</title>
     <meta property="og:title" content="Ridhwaan001" />
     <meta property="og:url" content="https://ridhwaan.co.uk/" />
-    <meta property="og:description" content="Ridhwaan001's homepage.">
-    <link rel="shortcut icon" type="image/png" href="./assets/icon.png"/>
+    <meta property="og:description" content="Ridhwaan001's website." />
+    <link rel="shortcut icon" type="image/png" href="./assets/icon.png" />
   </head>
-  <body id="body" class="animate__animated animate__fadeIn">
+
+  <body id="body" class="animate__animated animate__fadeIn" onload="onLoad()">
     <div class="banner">
       <div class="title">
+        <h1><strong>Ridhwaan001</strong></h1>
+        <script>
+          function githubPressed() {
+            var element = document.getElementById("subtitle");
+            element.innerHTML =
+              "I didn't expect anyone to go to my GitHub. <a href=\"javascript:ext('https://github.com/Ridhwaan001')\">Click here if you still want to visit it.</a>.";
+          }
+          function ext(url, self) {
+            var confirmation = confirm(
+              "By continuing, you're about to be redirected to " + url
+            );
+            if (confirmation) {
+              console.log(`Redirect to ${url} has been initiated.`);
+              if (self) {
+                window.open(url, "_self");
+              } else {
+                window.open(url);
+              }
+            } else {
+              console.log(`Redirect to ${url} has been cancelled.`);
+            }
+          }
 
-          <br>
-          <br>
-    <h1><strong>Ridhwaan001 - Home</strong></h1>
-    <br>
-    <br>
-    <script>
-      function githubPressed() {
-      var element = document.getElementById("subtitle");
-      element.innerHTML = "I didn't expect anyone to go to my github. It's on the links page if you really want to go there."
-      }
-      </script>
-    <h2 id="subtitle">This is where I put my stuff like links and projects.</h2>
-    <br>
-    <br>
-    <div class="media"><a href="javascript:redirect('https://twitter.com/Ridhwaan001')"><img class="mediabutton" src="assets/home/twitter.png" style="width:90px;height:90px;"></a>&emsp;&emsp;<a href="javascript:githubPressed()" id="github-button"><img class="mediabutton" src="assets/home/github.png" style="width:90px;height:90px;"></a>&emsp;&emsp;<a href="javascript:redirect('https://www.youtube.com/channel/UCgi5tX2HlSmJ3GVB_pkTBLQ')"><img class="mediabutton" src="assets/home/youtube.png" style="width:128px;height:90px;"></a></div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    </div>
-</div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src="./assets/icon.png" style="width:50px;height:50px;"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="javascript:redirect('./links')">Links</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Lonely Bot </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="javascript:redirect('./lonely-bot/')">Information + Features</a>
-          <a class="dropdown-item" href="javascript:redirect('./lonely-bot/commands')">Command List</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./projects/">Projects</a>
-      </li>
-  </div>
-</nav>
-
-<div class=content>
-  <br>
-  <br>
-  <h2><noscript>This site relies on JavaScript to function. Please enable it or switch to a JavaScript compatible browser.<br> <br></noscript></h2>
-  <br>
-  <br>
-  <h3>I updated my to do list! Visit <a href="./projects/">the projects page</a> to download the new version. (Currently only for Windows)</h3>
-    <br>
-    <h5>What should I add here?</h5>
-
-</div>
-<br>
-<br>
-<hr>
-
-
-    <br>
-    <br>
-    <br>
-    <div class="credits">Created by Ridhwaan using <a href="https://getbootstrap.com/">Bootstrap.</a> <br>
-      This site is now open-sourced! <a href="javascript:redirect('https://github.com/Ridhwaan001/ridhwaan.co.uk')">Click here to view on GitHub</i></a>
-      <p onclick="redirect('http:\/\/mail.ridhwaan.co.uk')">Webmail</p>
-      <br> <p onclick="ca()">Click to change appearance</p>
+          function onLoad() {
+            var desc = document.getElementById("subtitle");
+            var options = ["hi"];
+            var rand = Math.floor(Math.random() * options.length);
+            desc.innerHTML = options[rand];
+          }
+        </script>
+        <h2 id="subtitle">
+          This is where I put my stuff like links and projects.
+          <!--this message will never be displayed (changed via a script on page load)-->
+        </h2>
       </div>
-      <script> // code for appearance
-        var cookies = document.cookie;
-        var switcher = document.getElementById("appearanceSwitcher");
-        var body = document.body;
-        console.log(cookies)
-        if (cookies.includes(`mode`)) {
-            if (cookies.includes(`mode=dark`)) {
-              body.classList.add('darkmode');
-            } else {
-              body.classList.remove('darkmode');
-            }
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"
+        ><img src="./assets/icon.png" style="width: 50px; height: 50px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:redirect('./links')">Links</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content">
+      <h2>
+        <noscript
+          >This site relies on JavaScript to function. Please enable it or
+          switch to a JavaScript compatible browser.<br />
+          <br
+        /></noscript>
+      </h2>
+      <div class="separator"></div>
+      <h2>Hi there.</h2>
+      <h3>I'm Ridhwaan.</h3>
+      <div class="separator"></div>
+      <div class="planes">
+        <h2>I like planes.</h2>
+        <p>
+          Not only do they bypass gravity and go brrr into the sky, they are
+          also very fun to fly.
+        </p>
+      </div>
+      <div class="separator"></div>
+      <div class="threed">
+        <h2>I also enjoy 3D modelling.</h2>
+        <p>
+          I regularly make things on the virtual platform known as Roblox,
+          sometimes utilising Roblox's engine and Blender meshes for a single
+          thing. Some of the things I have created include a fictitious airport,
+          Liverpool John Lennon Airport and a small Tesco shop.
+        </p>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="projects">
+      <h1>Projects</h1>
+    </div>
+    <div class="seprator"></div>
+    <div class="todoList">
+      <h1>Simple Electron To Do List</h1>
+      <p>
+        A simple to do list I made using Node.js and Electron.js. Packaged to
+        run on Windows, however SmartScreen may block the app due to me not
+        being able to sign the executable. This warning can be ignored by going
+        to "More Details" on the warning -> "Run Anyway".
+      </p>
+      <button
+        onclick="window.open('https:/\/ridhwaan.co.uk/projects/windows-exe.zip', '_self')"
+        class="btn"
+      >
+        Download
+      </button>
+    </div>
+    <div class="separator"></div>
+    <div class="lonely">
+      <h1>This website</h1>
+      <p><a href="https://ridhwaan.co.uk">https://ridhwaan.co.uk</a></p>
+      <button
+        style="background-color: teal; color: #fff"
+        onclick="window.open('https:\/\/www.youtube.com/watch?v=bxqLsrlakK8&ab_channel=Revideo')"
+        class="btn"
+      >
+        a fancy button
+      </button>
+    </div>
+    <div class="seperator"></div>
+    <footer>
+      <img src="../assets/icon.png" height="50px" alt="" />
+      <br />
+      <br />
+      <p>
+        Created by Ridhwaan <br />
+        <br />
+        <button onClick="ca()" class="btn">Change Appearance</button>
+        &emsp;
+        <button
+          onClick="window.open('https://github.com/Ridhwaan001/ridhwaan.co.uk')"
+          class="btn"
+        >
+          Contribute
+        </button>
+      </p>
+    </footer>
+    <script>
+      // code for appearance
+      var cookies = document.cookie;
+      var switcher = document.getElementById("appearanceSwitcher");
+      var body = document.body;
+      console.log(cookies);
+      if (cookies.includes(`mode`)) {
+        if (cookies.includes(`mode=dark`)) {
+          body.classList.add("darkmode");
         } else {
-        var CookieDate = new Date;
-        CookieDate.setFullYear(CookieDate.getFullYear() +10);
-        document.cookie = 'mode=light; expires=' + CookieDate.toGMTString() + ';';
+          body.classList.remove("darkmode");
+        }
+      } else {
+        var CookieDate = new Date();
+        CookieDate.setFullYear(CookieDate.getFullYear() + 10);
+        document.cookie =
+          "mode=light; expires=" + CookieDate.toGMTString() + ";";
         var cookies = document.cookie;
-        console.log(cookies)
+        console.log(cookies);
+      }
+
+      function ca() {
+        if (cookies.includes("dark")) {
+          var element = document.getElementById("body");
+          element.classList.remove("darkmode");
+          var CookieDate = new Date();
+          CookieDate.setFullYear(CookieDate.getFullYear() + 10);
+          document.cookie =
+            "mode=light; expires=" + CookieDate.toGMTString() + ";";
+          console.log("changed to light");
+          location.reload();
+        } else {
+          if (cookies.includes("light")) {
+            var element = document.getElementById("body");
+            element.classList.add("darkmode");
+            var CookieDate = new Date();
+            CookieDate.setFullYear(CookieDate.getFullYear() + 10);
+            document.cookie =
+              "mode=dark; expires=" + CookieDate.toGMTString() + ";";
+            console.log("changed to dark");
+            location.reload();
+          }
         }
-        
-        function ca() {
-            if (cookies.includes('dark')) {
-              var element = document.getElementById("body");
-                    element.classList.remove("darkmode");
-                var CookieDate = new Date;
-                CookieDate.setFullYear(CookieDate.getFullYear() +10);
-                document.cookie = 'mode=light; expires=' + CookieDate.toGMTString() + ';';
-                console.log('changed to light')
-                location.reload();
-            } else {
-                if(cookies.includes('light')) {
-                  var element = document.getElementById("body");
-                    element.classList.add("darkmode");
-                    var CookieDate = new Date;
-                    CookieDate.setFullYear(CookieDate.getFullYear() +10);
-                    document.cookie = 'mode=dark; expires=' + CookieDate.toGMTString() + ';';
-                    console.log('changed to dark')
-                    location.reload();
-                }
-            }
-        }
-  
-        </script>    <!-- Optional JavaScript -->
+      }
+    </script>
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
